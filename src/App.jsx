@@ -17,7 +17,9 @@ function App() {
     setExplanation("");
 
     try {
-      const response = await fetch("http://localhost:5001/api/explain", {
+      const response = await fetch(
+  "https://ai-code-assistant-2dq4.onrender.com/api/explain",
+  {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
